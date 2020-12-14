@@ -37,6 +37,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		864E0E1E2587824000B5A3B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				86F7F51A2586B62800C7902F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		864E0E1F2587825D00B5A3B5 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				86F7F5162586B62800C7902F /* AppDelegate.swift */,
+				86F7F5182586B62800C7902F /* SceneDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
 		86F7F50A2586B62800C7902F = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +73,8 @@
 		86F7F5152586B62800C7902F /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
-				86F7F5162586B62800C7902F /* AppDelegate.swift */,
-				86F7F5182586B62800C7902F /* SceneDelegate.swift */,
-				86F7F51A2586B62800C7902F /* ViewController.swift */,
+				864E0E1F2587825D00B5A3B5 /* Delegates */,
+				864E0E1E2587824000B5A3B5 /* Controller */,
 				86F7F51C2586B62800C7902F /* Main.storyboard */,
 				86F7F51F2586B62A00C7902F /* Assets.xcassets */,
 				86F7F5212586B62A00C7902F /* LaunchScreen.storyboard */,
