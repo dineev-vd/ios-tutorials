@@ -49,6 +49,7 @@ class TripViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.backgroundColor = UIColor.clear
         let flowLayout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
     }
 
 

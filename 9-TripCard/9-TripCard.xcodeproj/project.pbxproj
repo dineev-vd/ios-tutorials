@@ -60,17 +60,41 @@
 		8640168F25C6EF7A004BC65B /* 9-TripCard */ = {
 			isa = PBXGroup;
 			children = (
+				86C2770625C777D400CD5F80 /* View */,
+				86C2770525C777CC00CD5F80 /* Model */,
+				86C2770425C777B100CD5F80 /* Controller */,
 				8640169025C6EF7A004BC65B /* AppDelegate.swift */,
 				8640169225C6EF7A004BC65B /* SceneDelegate.swift */,
-				8640169425C6EF7A004BC65B /* TripViewController.swift */,
 				8640169625C6EF7A004BC65B /* Main.storyboard */,
 				8640169925C6EF7D004BC65B /* Assets.xcassets */,
 				8640169B25C6EF7D004BC65B /* LaunchScreen.storyboard */,
 				8640169E25C6EF7D004BC65B /* Info.plist */,
-				864016A525C6FBCD004BC65B /* TripCollectionViewCell.swift */,
-				864016A825C6FE24004BC65B /* Trip.swift */,
 			);
 			path = "9-TripCard";
+			sourceTree = "<group>";
+		};
+		86C2770425C777B100CD5F80 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8640169425C6EF7A004BC65B /* TripViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		86C2770525C777CC00CD5F80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				864016A825C6FE24004BC65B /* Trip.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86C2770625C777D400CD5F80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				864016A525C6FBCD004BC65B /* TripCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
