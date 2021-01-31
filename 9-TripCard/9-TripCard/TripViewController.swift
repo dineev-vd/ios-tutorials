@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TripViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class TripViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return trips.count
     }
@@ -39,6 +39,8 @@ class TripViewController: UIViewController, UICollectionViewDelegate, UICollecti
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         collectionView.backgroundColor = UIColor.clear
+        let flowLayout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
     }
 
 

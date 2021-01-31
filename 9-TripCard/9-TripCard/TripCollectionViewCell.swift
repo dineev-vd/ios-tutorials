@@ -18,9 +18,9 @@ class TripCollectionViewCell: UICollectionViewCell {
     var isLiked: Bool = false {
         didSet {
             if isLiked {
-                likeButton.setImage(UIImage(named: "heartfull"), for: .normal)
+                likeButton.setImage(UIImage(systemName: "heartfull"), for: .normal)
             } else {
-                likeButton.setImage(UIImage(named: "heart"), for: .normal)
+                likeButton.setImage(UIImage(systemName: "heart"), for: .normal)
             }
         }
     }
