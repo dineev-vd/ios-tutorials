@@ -7,7 +7,14 @@
 
 import UIKit
 
-class TripViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class TripViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, TripCollectionCellDelegate {
+    func didLikeButtonPressed(cell: TripCollectionViewCell) {
+        if let indexPath = collectionView.indexPath(for: cell){
+            trips[indexPath.row].isLiked = trips[indexPath.row].isLiked ? false : true
+                cell.isLiked = trips[indexPath.row].isLiked
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return trips.count
     }
@@ -24,6 +31,7 @@ class TripViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         // round corner
         cell.layer.cornerRadius = 4.0
+        cell.delegate = self
         return cell
     }
     

@@ -77,6 +77,9 @@
                                                             </constraints>
                                                             <color key="tintColor" systemColor="systemRedColor"/>
                                                             <state key="normal" image="heart" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="likeButtonTappedWithSender:" destination="vYV-Cv-tUj" eventType="touchUpInside" id="bL8-PS-nW8"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
