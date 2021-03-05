@@ -16,11 +16,42 @@
 		86AFE42A2572E5D3004B10B3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AFE4292572E5D2004B10B3 /* SwiftyJSON.swift */; };
 		86AFE42D2572EC73004B10B3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AFE42C2572EC73004B10B3 /* DetailViewController.swift */; };
 		86AFE4312572F0CE004B10B3 /* CommitsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86AFE42F2572F0CE004B10B3 /* CommitsApp.xcdatamodeld */; };
+		86B198D425EC3BAE0078221F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B198D325EC3BAE0078221F /* WidgetKit.framework */; };
+		86B198D625EC3BAE0078221F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B198D525EC3BAE0078221F /* SwiftUI.framework */; };
+		86B198D925EC3BAE0078221F /* TaskWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B198D825EC3BAE0078221F /* TaskWidget.swift */; };
+		86B198DC25EC3BB20078221F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B198DB25EC3BB20078221F /* Assets.xcassets */; };
+		86B198DE25EC3BB20078221F /* TaskWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 86B198DA25EC3BAF0078221F /* TaskWidget.intentdefinition */; };
+		86B198DF25EC3BB20078221F /* TaskWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 86B198DA25EC3BAF0078221F /* TaskWidget.intentdefinition */; };
+		86B198E225EC3BB20078221F /* TaskWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 86B198D125EC3BAE0078221F /* TaskWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		86F4A9362572F93100DE245F /* Commit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F4A9342572F93100DE245F /* Commit+CoreDataClass.swift */; };
 		86F4A9372572F93100DE245F /* Commit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F4A9352572F93100DE245F /* Commit+CoreDataProperties.swift */; };
 		86F4A93B257435F300DE245F /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F4A939257435F300DE245F /* Author+CoreDataClass.swift */; };
 		86F4A93C257435F300DE245F /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F4A93A257435F300DE245F /* Author+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86B198E025EC3BB20078221F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86AFE4092572E3B9004B10B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86B198D025EC3BAE0078221F;
+			remoteInfo = TaskWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		86B198E325EC3BB20078221F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				86B198E225EC3BB20078221F /* TaskWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		86AFE4112572E3B9004B10B3 /* CommitsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommitsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +65,13 @@
 		86AFE4292572E5D2004B10B3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		86AFE42C2572EC73004B10B3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		86AFE4302572F0CE004B10B3 /* CommitsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CommitsApp.xcdatamodel; sourceTree = "<group>"; };
+		86B198D125EC3BAE0078221F /* TaskWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TaskWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		86B198D325EC3BAE0078221F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		86B198D525EC3BAE0078221F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		86B198D825EC3BAE0078221F /* TaskWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidget.swift; sourceTree = "<group>"; };
+		86B198DA25EC3BAF0078221F /* TaskWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = TaskWidget.intentdefinition; sourceTree = "<group>"; };
+		86B198DB25EC3BB20078221F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86B198DD25EC3BB20078221F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86F4A9342572F93100DE245F /* Commit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Commit+CoreDataClass.swift"; path = "CommitsApp/Models/Commit+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		86F4A9352572F93100DE245F /* Commit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Commit+CoreDataProperties.swift"; path = "CommitsApp/Models/Commit+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		86F4A939257435F300DE245F /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Author+CoreDataClass.swift"; path = "CommitsApp/Models/Author+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
@@ -48,6 +86,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86B198CE25EC3BAE0078221F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86B198D625EC3BAE0078221F /* SwiftUI.framework in Frameworks */,
+				86B198D425EC3BAE0078221F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				86AFE4132572E3B9004B10B3 /* CommitsApp */,
+				86B198D725EC3BAE0078221F /* TaskWidget */,
+				86B198D225EC3BAE0078221F /* Frameworks */,
 				86AFE4122572E3B9004B10B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				86AFE4112572E3B9004B10B3 /* CommitsApp.app */,
+				86B198D125EC3BAE0078221F /* TaskWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +131,26 @@
 				86AFE4222572E3BC004B10B3 /* Info.plist */,
 			);
 			path = CommitsApp;
+			sourceTree = "<group>";
+		};
+		86B198D225EC3BAE0078221F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86B198D325EC3BAE0078221F /* WidgetKit.framework */,
+				86B198D525EC3BAE0078221F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86B198D725EC3BAE0078221F /* TaskWidget */ = {
+			isa = PBXGroup;
+			children = (
+				86B198D825EC3BAE0078221F /* TaskWidget.swift */,
+				86B198DA25EC3BAF0078221F /* TaskWidget.intentdefinition */,
+				86B198DB25EC3BB20078221F /* Assets.xcassets */,
+				86B198DD25EC3BB20078221F /* Info.plist */,
+			);
+			path = TaskWidget;
 			sourceTree = "<group>";
 		};
 		86F4A9612574469100DE245F /* Controllers */ = {
@@ -114,15 +184,34 @@
 				86AFE40D2572E3B9004B10B3 /* Sources */,
 				86AFE40E2572E3B9004B10B3 /* Frameworks */,
 				86AFE40F2572E3B9004B10B3 /* Resources */,
+				86B198E325EC3BB20078221F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				86B198E125EC3BB20078221F /* PBXTargetDependency */,
 			);
 			name = CommitsApp;
 			productName = CommitsApp;
 			productReference = 86AFE4112572E3B9004B10B3 /* CommitsApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		86B198D025EC3BAE0078221F /* TaskWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86B198E625EC3BB20078221F /* Build configuration list for PBXNativeTarget "TaskWidgetExtension" */;
+			buildPhases = (
+				86B198CD25EC3BAE0078221F /* Sources */,
+				86B198CE25EC3BAE0078221F /* Frameworks */,
+				86B198CF25EC3BAE0078221F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaskWidgetExtension;
+			productName = TaskWidgetExtension;
+			productReference = 86B198D125EC3BAE0078221F /* TaskWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -130,11 +219,14 @@
 		86AFE4092572E3B9004B10B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					86AFE4102572E3B9004B10B3 = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					86B198D025EC3BAE0078221F = {
+						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
@@ -152,6 +244,7 @@
 			projectRoot = "";
 			targets = (
 				86AFE4102572E3B9004B10B3 /* CommitsApp */,
+				86B198D025EC3BAE0078221F /* TaskWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -167,6 +260,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86B198CF25EC3BAE0078221F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86B198DC25EC3BB20078221F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -179,6 +280,7 @@
 				86AFE4192572E3B9004B10B3 /* ViewController.swift in Sources */,
 				86AFE4152572E3B9004B10B3 /* AppDelegate.swift in Sources */,
 				86AFE42D2572EC73004B10B3 /* DetailViewController.swift in Sources */,
+				86B198DF25EC3BB20078221F /* TaskWidget.intentdefinition in Sources */,
 				86AFE4172572E3B9004B10B3 /* SceneDelegate.swift in Sources */,
 				86F4A93B257435F300DE245F /* Author+CoreDataClass.swift in Sources */,
 				86F4A9372572F93100DE245F /* Commit+CoreDataProperties.swift in Sources */,
@@ -187,7 +289,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86B198CD25EC3BAE0078221F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86B198D925EC3BAE0078221F /* TaskWidget.swift in Sources */,
+				86B198DE25EC3BB20078221F /* TaskWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86B198E125EC3BB20078221F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86B198D025EC3BAE0078221F /* TaskWidgetExtension */;
+			targetProxy = 86B198E025EC3BB20078221F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		86AFE41A2572E3B9004B10B3 /* Main.storyboard */ = {
@@ -328,6 +447,7 @@
 		86AFE4262572E3BC004B10B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -347,6 +467,7 @@
 		86AFE4272572E3BC004B10B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -358,6 +479,50 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dineevvd.CommitsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86B198E425EC3BB20078221F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XWJ7CTJ99D;
+				INFOPLIST_FILE = TaskWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dineevvd.CommitsApp.TaskWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86B198E525EC3BB20078221F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XWJ7CTJ99D;
+				INFOPLIST_FILE = TaskWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dineevvd.CommitsApp.TaskWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,6 +545,15 @@
 			buildConfigurations = (
 				86AFE4262572E3BC004B10B3 /* Debug */,
 				86AFE4272572E3BC004B10B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86B198E625EC3BB20078221F /* Build configuration list for PBXNativeTarget "TaskWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86B198E425EC3BB20078221F /* Debug */,
+				86B198E525EC3BB20078221F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
